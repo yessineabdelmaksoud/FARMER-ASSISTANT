@@ -1,0 +1,5 @@
+cd farmer-assistant\src\api 
+python main.py
+
+cd farmer-assistant
+npm run dev

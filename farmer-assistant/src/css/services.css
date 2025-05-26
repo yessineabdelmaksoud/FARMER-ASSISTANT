@@ -1,0 +1,72 @@
+/* services.css */
+.services {
+    background-color: #f0f0f0; /* Fond gris clair pour la section */
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .services h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .services p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #555;
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Aligner 3 cartes par ligne */
+    gap: 20px;
+    justify-items: center; /* Centrer les cartes horizontalement */
+  }
+  
+  .service-card {
+    background-color: white;
+    border-radius: 10px; /* Bordures arrondies */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile pour donner un effet de profondeur */
+    padding: 20px;
+    width: 100%;
+    max-width: 430px; /* Limite la largeur des cartes */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation au survol */
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px); /* Effet de levée au survol */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+  }
+  
+  .service-card img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    vertical-align: middle;
+  }
+  
+  .service-card h3 {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .service-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cartes par ligne sur les petits écrans */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .service-grid {
+      grid-template-columns: 1fr; /* 1 carte par ligne sur les très petits écrans */
+    }
+  }
+  
